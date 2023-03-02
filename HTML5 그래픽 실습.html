@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="300" height="200" 
+            id="myCanvas"
+            style="border: brown solid 1px;">
+    </canvas>
+
+    <script>
+        // canvas id값을 통해 태그가져오기
+        let paper = document.getElementById("myCanvas");
+        let context = paper.getContext("2d");
+
+        //그라디언트를 생성
+        let grd = context.createLinearGradient(0,0,300,0);
+        grd.addColorStop(0,"blue");
+        grd.addColorStop(1,"white");
+
+        //사각형 만들기
+        context.fillStyle = grd;
+        context.fillRect(0,0, 300, 100);
+
+        //글자 작성
+        // fillStyle은 모든 도형의 fill색상이다
+        context.fillStyle = "white";
+        context.font = "30px Arial";
+        context.fillText("CANVAS", 10, 50);
+    </script>
+</body>
+</html>

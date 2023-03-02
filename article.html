@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+</head>
+<body>
+    <main>
+        <h1>기사제목입니다</h1>
+        <figure>
+            <img src="./img/bird.jpg" width="300" alt="새">
+            <img src="https://search.pstatic.net/common?type=f&size=206x206&quality=95&direct=true&src=http%3A%2F%2Fshop1.phinf.naver.net%2F20210418_136%2F1618674583729CsTje_JPEG%2F54810200578891611_-1854514124.jpg" alt="">
+            <figcaption>위 이미지는 <a href="https://pixabay.com/ko/">픽사베이</a>에서 제공받았습니다</figcaption>
+            <figcaption>
+                웹사이트에서 이미지의 '새탭으로 이미지 열기'를 
+                통해서 주소를 가져와서 화면에 출력할 수 있다
+            </figcaption>
+        </figure>
+        <p>
+            기사 내용입니다 <br>
+            관련 기사들을 작성해주세요 
+        </p>
+        <p><i>작성자 홍길동</i></p>
+        <hr>
+        <form action="">
+            <p>이 기사에 대한 평가를 적어주세요</p>
+            <input 
+                type="radio" name="appraisal" value="좋아요"
+            > &#128525;좋아요
+            <input 
+                type="radio" name="appraisal" value="슬퍼요"
+            > &#128546;슬퍼요
+            <input 
+                type="radio" name="appraisal" value="화나요"
+            > &#128545;화나요
+
+            <div>
+                <p>격려의 메시지와 후원을 받고 있습니다</p>
+                <label for="">닉네임</label>
+                <input type="text" >
+                <label for="">비밀번호</label>
+                <input type="password" > 
+            </div>
+            <textarea placeholder="메시지를 남겨주세요" 
+                cols="68" rows="3"></textarea> <br>
+            <label for="">후원금</label>
+            <input type="number" step="1000" min="0">
+            <p>
+                <u>1000원</u> 단위로 올라갑니다 
+                원하는 금액을 입력해주세요
+            </p>
+            <input type="submit" value="제출">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <a href="">회사소개</a> |
+        <a href="">인재채용</a> |
+        <a href="">제휴제안</a> |
+        <a href="">개인정보처리방침</a> |
+        &copy;뉴스
+    </footer>
+</body>
+</html>

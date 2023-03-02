@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML5 멀티미디어</h1>
+    <h2>video</h2>
+    <video src="./video/페레로.mp4" 
+        style="width: 576px; height: 360px;"
+        controls autoplay muted loop
+    ></video>
+    <p>
+        controls : 플레이버튼과 남은시간, 소리표시<br>
+        autoplay : 자동실행 (단, muted상태일때) <br>
+        muted : 무음 <br>
+        loop : 계속 반복 <br>
+    </p>
+
+    <h2>플러그인</h2>
+    <h3>object</h3>
+    <object data="./data/3일차 HTML5.pdf"></object>
+    <object data="./img/naver.png" type=""></object>
+    <p>object 태그는 다양한 파일들을 화면에 출력하는 태그</p>
+
+    <h3>embed</h3>
+    <embed src="./data/3일차 HTML5.pdf" type="">
+    <embed src="./img/naver.png" type="">
+    <p> embed object와 동일하게 사용할 수 있다</p>
+
+    <h3>유튜브 영상들고오기</h3>
+    <iframe 
+    width="640" 
+    height="360" 
+    src="https://www.youtube.com/embed/XyHr-s3MfCQ?mute=1&autoplay=1&controls=0" 
+    title="[가디언즈 오브 갤럭시: Volume 3] 메인 예고편" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+    <p>
+        소스코드로 복사해오면 iframe안에 설정이 되어서
+        들고올 수 있다
+    </p>
+    <p>
+        video의 설정을 유튜브에서도 적용할수 있다 <br>
+        url뒤에 ?를 이용한 "쿼리스트링"으로 작성할수 있다 <br>
+        ?mute=1&autoplay=1 같은 값으로 들어간다 <br>
+        1은 true 참이라는 값으로 사용, 
+        0은 false 거짓이라는 값으로 사용
+    </p>
+
+    <h3>멀티미디어 실습</h3>
+    <table>
+        <tr>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/on09zv-ujyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/93rSwCT3Pt4" title="고통스럽지만 애써 웃어보는 강아지ㅋㅋㅋ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/mWVP-mfpZCU" title="집사한테 말대꾸 좀 치는 강아지 (말 많음 주의)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/Yp-kVZCzCfM" title="아기 골든리트리버 아몬드와의 첫 만남" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td>"단체로 항의하는 아기"</td>
+            <td>"고통스럽지만 애써 웃어보는 강아지ㅋㅋㅋ"</td>
+            <td>"집사한테 말대꾸 좀 치는 강아지 (말 많음 주의)"</td>
+            <td>"아기 골든리트리버 아몬드와의 첫 만남"</td>
+        </tr>
+    </table>
+</body>
+</html>
